@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Whiskey Flavor Profiles by arcs!</title>
+<style>
+
+#whiskey_pies {
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.arc_label {
+  font-family: sans-serif;
+  font-size: 8pt;
+}
+.title {
+  font-family: sans-serif;
+}
+#footer {
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<a href="https://github.com/t-mart/d3whiskey"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script src="whiskey_pies.js"></script>
+
+<div id="whiskey_pies">
+  <h2 class="title">Whiskey Flavor Profiles <em>by arcs!</em></h2>
+  <p>"86 malt whiskies are scored between 0-4 for 12 different taste categories including sweetness, smoky, nutty etc." <a href="https://www.mathstat.strath.ac.uk/outreach/nessie/nessie_whisky.html">Source data</a></p>
+  <p>This is a prototypical reiteration of Christopher Ingram's <a href="http://wonkviz.tumblr.com/post/72159021235/whiskey-flavor-profiles">similar chart</a>. However, that chart plots <em>points</em> around a circle and fills the created shape with color; this isn't good because, for example a 4 surrounded by two 1's will have very little area. Instead of points, I use <em>arcs</em>. This way, strong attributes have large area and vice versa. I also scale the color from white to a gold color, which should make comparisons a little easier.</p>
+  <p>Written with the <a href="http://d3js.org">D3.js</a> library.</p>.
+</div>
+<div id="footer">Tim Martin, 2014</div>
+</html>
